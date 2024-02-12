@@ -1,9 +1,10 @@
 {
-  "name": "practicadockercompose2024jordiva-enrique",
+  "name": "practica-2",
   "version": "1.0.0",
-  "description": "Práctica Final Docker Compose 2024 - Jordi Vañó Enrique",
+  "description": "docker build -t hello-node .",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
