@@ -1,0 +1,16 @@
+{
+  "name": "practicadockercompose2024jordiva-enrique",
+  "version": "1.0.0",
+  "description": "Práctica Final Docker Compose 2024 - Jordi Vañó Enrique",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.2"
+  }
+}
