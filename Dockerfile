@@ -1,5 +1,5 @@
 FROM node:19
-
+#-p para que la cree si no existe
 RUN mkdir -p /usr/src/app  
 
 WORKDIR /usr/src/

@@ -1,0 +1,28 @@
+# Utiliza una imagen base con Node.js
+FROM node:19-alpine AS build
+
+# Establece el directorio de trabajo en el contenedor
+WORKDIR /usr/src/app
+
+# Copia los archivos de configuración y dependencias
+COPY package*.json ./
+COPY . .
+
+# Instala las dependencias del proyecto
+RUN npm install
+
+# Compila la aplicación para producción
+RUN npm run build
+
+FROM node:19-alpine
+
+WORKDIR /usr/src/app
+
+COPY --from=build /usr/src/app ./
+
+COPY package*.json ./
+
+RUN npm install
+
+# Comando para iniciar el servidor web del frontend
+CMD ["npm", "start"]
