@@ -6,7 +6,7 @@ Una vez hecha la clonación, accedemos al terminar y creamos una nueva rama en g
 
 Una vez creada la rama, nos aseguramos que estamos dentro de la rama creada “main_docker_compose” mediante el comando “git branch -a” y seguimos con la elaboración del proyecto:
 
-Acto seguido, procedemos a realizar (tras añadir los archivos principales de app, datasources, nginx.conf y prometheus) el archivo docker-compose.yml con los siguientes datos:
+Antes de empezar, procedemos a realizar (tras añadir los archivos principales de app, datasources, nginx.conf y prometheus) ejecutaremos estos dos primeros comandos para inicializar el proyecto, “npm init -y” y “npm i express mongoose”. Acto seguido, crearemos el archivo docker-compose.yml con los siguientes datos:
 
 ---
 
